@@ -1,0 +1,124 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Arial', serif;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('watercolor.gif');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.nav {
+	width: 85%;
+	margin: auto;
+	padding: 35px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo {
+	width: 200px;
+	cursor: pointer;
+}
+.nav > ul > li {
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	position: relative;
+}
+.nav > ul > li:after {
+	content: '';
+	height: 3px;
+	width: 0;
+	background: #CABD2A;
+	position: absolute;
+	left: 0;
+	bottom: -9px;
+	transition: 0.5s;
+}
+.nav > ul > li:hover:after {
+	width: 100%;
+}
+.nav > ul > li > a {
+	text-decoration: none;
+	font-family: Times New Roman;
+	font-size: 23px;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+.heading {
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	color: #ffffff;
+}
+.heading h1 {
+	font-size: 50px;
+	font-family: Times New Roman;
+	font-weight: bold;
+	margin-top: 50px;
+	cursor: default;
+	color: #CABD2A;
+	text-decoration: underline;
+}
+.heading p {
+	margin: auto;
+	font-size: 22px;
+	font-family: Times New Roman;
+	cursor: default;
+	line-height: 30px;
+}
+.heading h2 {
+	font-size: 35px;
+	font-family: Times New Roman;
+	text-align: left;
+	padding: 0 0 0 150px;
+	color: #9E1313;
+}
+.heading h3 {
+	text-align: left;
+	padding: 0 0 0 150px;
+	color: #06426A;
+	font-size: 22px;
+}
+.heading img {
+	width: 220px;
+	float: left;
+	padding: 0 0 0 150px;
+}
+button {
+	width: 300px;
+	padding: 15px 0;
+	text-align: center;
+	margin: 20px 10px;
+	border-radius: 25px;
+	font-weight: bold;
+	font-size: 20px;
+	border: 2px solid #CABD2A;
+	background: transparent;
+	color: #ffffff;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+}
+span {
+	background: #CABD2A;
+	height: 100%;
+	width: 0%;
+	border-radius: 25px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index:-1;
+	transition: 0.5s;
+}
+button:hover span {
+	width: 100%;
+}
+
+	
+	
+	
+	
+
+
+
